@@ -1,0 +1,6 @@
+{
+  "name": "Nexora - Information Retrieval Engine",
+  "description": "Intelligent document search, Trie autocomplete, BM25 ranking, Top-K heap, and knowledge graph engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

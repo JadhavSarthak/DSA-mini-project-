@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+:root {
+  --red: #E2261B;
+  --red-deep: #B81C13;
+  --ink: #0B0B0B;
+  --paper: #FFF6EC;
+  --white: #FFFFFF;
+  --hit: #FFD400;
+  --muted: #7A1A14;
+  --radius-pill: 999px;
+  --radius-panel: 20px;
+  --shadow-hard: 4px 4px 0 var(--ink);
+  --shadow-hard-sm: 2px 2px 0 var(--ink);
+  --shadow-hard-lg: 6px 6px 0 var(--ink);
+  --font-display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  background-color: var(--red);
+  color: var(--paper);
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-ui);
+  background-color: var(--red);
+  color: var(--paper);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 11vw, 7.5rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* Neo-brutalist buttons as defined in DESIGN.md */
+.btn-primary {
+  font: 800 0.95rem var(--font-ui);
+  padding: 12px 24px;
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-pill);
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: var(--shadow-hard);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+  user-select: none;
+}
+.btn-primary:hover {
+  background: #1e1e1e;
+}
+.btn-primary:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--ink);
+}
+.btn-primary:focus-visible {
+  outline: 3px solid var(--hit);
+  outline-offset: 2px;
+}
+
+.btn-secondary {
+  font: 800 0.95rem var(--font-ui);
+  padding: 12px 24px;
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-pill);
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: var(--shadow-hard);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+  user-select: none;
+}
+.btn-secondary:hover {
+  background: #fffdfa;
+}
+.btn-secondary:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--ink);
+}
+.btn-secondary:focus-visible {
+  outline: 3px solid var(--hit);
+  outline-offset: 2px;
+}
+
+.btn-hit {
+  font: 800 0.95rem var(--font-ui);
+  padding: 12px 24px;
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-pill);
+  background: var(--hit);
+  color: var(--ink);
+  box-shadow: var(--shadow-hard);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  user-select: none;
+}
+.btn-hit:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+/* Sticker Panels on Red */
+.paper-panel {
+  background: var(--paper);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--shadow-hard);
+}
+
+.paper-card {
+  background: var(--paper);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: var(--shadow-hard);
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+.paper-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+/* Tabs */
+.tab-pill {
+  border: 3px solid var(--ink);
+  border-radius: var(--radius-pill);
+  background: var(--paper);
+  color: var(--ink);
+  padding: 8px 16px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 120ms ease;
+  user-select: none;
+  box-shadow: var(--shadow-hard-sm);
+}
+.tab-pill:hover {
+  background: #fff;
+}
+.tab-pill[aria-selected="true"],
+.tab-pill.active {
+  background: var(--hit);
+  box-shadow: var(--shadow-hard);
+  transform: translate(-1px, -1px);
+}
+.tab-pill:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+/* Score pop badge */
+.score-badge {
+  background: var(--hit);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-pill);
+  font-weight: 800;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+/* Sound / control tag */
+.tag-ink {
+  background: var(--ink);
+  color: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+
+/* High-contrast highlighted text in search snippets */
+mark,
+.hit-mark {
+  background-color: var(--hit) !important;
+  color: var(--ink) !important;
+  font-weight: 800 !important;
+  padding: 1px 6px !important;
+  margin: 0 1.5px !important;
+  border-radius: 6px !important;
+  border: 1.5px solid var(--ink) !important;
+  box-shadow: 1.5px 1.5px 0 var(--ink) !important;
+  display: inline-block !important;
+  line-height: 1.25 !important;
+  text-decoration: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

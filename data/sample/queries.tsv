@@ -1,0 +1,11 @@
+query	relevant_docs	notes
+machine learning	01-machine-learning-basics.md,02-deep-learning-architectures.md	ML and DL overview
+inverted index	03-search-engines-and-information-retrieval.md,08-database-storage-engines-and-indexing.md	Information retrieval and search indices
+neural networks	02-deep-learning-architectures.md,01-machine-learning-basics.md	Deep learning and neural models
+graph algorithms	06-graph-algorithms-and-networks.md,05-data-structures-and-algorithms.md	Graph traversal and data structures
+virtual memory	09-operating-systems-and-virtual-memory.md	OS memory management and paging
+consensus protocols	07-distributed-systems-and-consensus.md	Raft Paxos and distributed systems
+compiler optimization	10-compiler-design-and-code-optimization.md	AST and compiler pipeline
+tcp udp transport	11-computer-networking-and-protocols.md	Networking transport layer
+public key encryption	12-cryptography-and-security.md	Asymmetric cryptography and RSA
+b tree indexing	08-database-storage-engines-and-indexing.md,05-data-structures-and-algorithms.md	Database storage and balanced trees
