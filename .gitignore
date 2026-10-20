@@ -1,3 +1,4 @@
+# Node / Web dependencies
 node_modules/
 build/
 dist/
@@ -6,3 +7,17 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# C++ Compiled Executables and Objects
+nexora
+run_tests
+run_tests_dbg
+benchmark
+evaluate
+*.o
+*.out
+*.app
+*.dSYM/
+*.gcda
+*.gcno
+*.gch
