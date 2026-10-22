@@ -142,3 +142,21 @@ export interface BenchmarkMetrics {
     ratio: string;
   };
 }
+
+// Runtime object exports for Node.js type-stripping runtime compatibility
+export const Document = {};
+export const PostingsEntry = {};
+export const TermScoreBreakdown = {};
+export const ScoreExplanation = {};
+export const SearchResult = {};
+export const TrieSuggestion = {};
+export const GraphNode = {};
+export const GraphEdge = {};
+export const GraphData = {};
+export const RelatedDocResult = {};
+export const ReachableLevel = {};
+export const QueryJob = {};
+export const EvalQueryItem = {};
+export const EvalSummary = {};
+export const BenchmarkMetrics = {};
+

@@ -1,5 +1,5 @@
 import os from 'os';
-import { BenchmarkMetrics, SearchResult } from './types.ts';
+import type { BenchmarkMetrics, SearchResult } from './types.ts';
 import { SearchService } from './searchService.ts';
 import { TopKHeap } from './topKHeap.ts';
 

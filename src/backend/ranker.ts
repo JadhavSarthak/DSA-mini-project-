@@ -1,5 +1,5 @@
 import { InvertedIndex } from './invertedIndex.ts';
-import { ScoreExplanation, TermScoreBreakdown } from './types.ts';
+import type { ScoreExplanation, TermScoreBreakdown } from './types.ts';
 
 export class Ranker {
   public static readonly DEFAULT_K1 = 1.2;

@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { Document } from './types.ts';
+import type { Document } from './types.ts';
 import { TextProcessor } from './textProcessor.ts';
 
 export interface LoadResult {

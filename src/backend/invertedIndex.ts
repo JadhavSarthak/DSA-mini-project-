@@ -1,4 +1,4 @@
-import { Document, PostingsEntry } from './types.ts';
+import type { Document, PostingsEntry } from './types.ts';
 
 export class InvertedIndex {
   // term -> Map<docId, termFrequency>

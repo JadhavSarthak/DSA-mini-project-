@@ -1,4 +1,4 @@
-import { SearchResult } from './types.ts';
+import type { SearchResult } from './types.ts';
 
 export interface HeapStepTrace {
   step: number;

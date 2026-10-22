@@ -1,4 +1,4 @@
-import { QueryJob } from './types.ts';
+import type { QueryJob } from './types.ts';
 
 class QueueNode<T> {
   public data: T;

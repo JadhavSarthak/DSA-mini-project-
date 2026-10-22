@@ -1,4 +1,4 @@
-import { Document, GraphData, GraphEdge, GraphNode, ReachableLevel, RelatedDocResult } from './types.ts';
+import type { Document, GraphData, GraphEdge, GraphNode, ReachableLevel, RelatedDocResult } from './types.ts';
 import { InvertedIndex } from './invertedIndex.ts';
 import { TextProcessor } from './textProcessor.ts';
 import { Ranker } from './ranker.ts';

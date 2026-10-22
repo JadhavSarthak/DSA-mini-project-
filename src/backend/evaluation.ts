@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { EvalQueryItem, EvalSummary } from './types.ts';
+import type { EvalQueryItem, EvalSummary } from './types.ts';
 import { SearchService } from './searchService.ts';
 
 export class EvaluationEngine {

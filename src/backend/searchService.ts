@@ -6,8 +6,8 @@ import { InvertedIndex } from './invertedIndex.ts';
 import { QueryQueue } from './queryQueue.ts';
 import { Ranker } from './ranker.ts';
 import { TextProcessor } from './textProcessor.ts';
-import { TopKHeap, HeapStepTrace } from './topKHeap.ts';
-import { Document, QueryJob, SearchResult, TrieSuggestion } from './types.ts';
+import { TopKHeap, type HeapStepTrace } from './topKHeap.ts';
+import type { Document, QueryJob, SearchResult, TrieSuggestion } from './types.ts';
 
 export interface SearchOutput {
   query: string;

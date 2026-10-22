@@ -1,4 +1,4 @@
-import { TrieSuggestion } from './types.ts';
+import type { TrieSuggestion } from './types.ts';
 
 export class TrieNode {
   public children: Map<string, TrieNode> = new Map();
