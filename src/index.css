@@ -9,10 +9,10 @@
   --hit: #FFD400;
   --muted: #7A1A14;
   --radius-pill: 999px;
-  --radius-panel: 20px;
-  --shadow-hard: 4px 4px 0 var(--ink);
+  --radius-panel: 16px;
+  --shadow-hard: 3px 3px 0 var(--ink);
   --shadow-hard-sm: 2px 2px 0 var(--ink);
-  --shadow-hard-lg: 6px 6px 0 var(--ink);
+  --shadow-hard-lg: 4px 4px 0 var(--ink);
   --font-display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
   --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
@@ -34,13 +34,13 @@ body {
 
 .font-display {
   font-family: var(--font-display);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 11vw, 7.5rem);
-  line-height: 0.9;
+  font-size: clamp(2.2rem, 4.2vw, 3.6rem);
+  line-height: 0.96;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: -0.01em;
@@ -48,9 +48,10 @@ body {
 
 /* Neo-brutalist buttons as defined in DESIGN.md */
 .btn-primary {
-  font: 800 0.95rem var(--font-ui);
-  padding: 12px 24px;
-  border: 3px solid var(--ink);
+  font: 800 0.875rem var(--font-ui);
+  min-height: 42px;
+  padding: 8px 20px;
+  border: 2px solid var(--ink);
   border-radius: var(--radius-pill);
   background: var(--ink);
   color: var(--paper);
@@ -67,7 +68,7 @@ body {
   background: #1e1e1e;
 }
 .btn-primary:active {
-  transform: translate(4px, 4px);
+  transform: translate(2px, 2px);
   box-shadow: 0 0 0 var(--ink);
 }
 .btn-primary:focus-visible {
@@ -76,9 +77,10 @@ body {
 }
 
 .btn-secondary {
-  font: 800 0.95rem var(--font-ui);
-  padding: 12px 24px;
-  border: 3px solid var(--ink);
+  font: 800 0.875rem var(--font-ui);
+  min-height: 42px;
+  padding: 8px 20px;
+  border: 2px solid var(--ink);
   border-radius: var(--radius-pill);
   background: var(--paper);
   color: var(--ink);
@@ -95,7 +97,7 @@ body {
   background: #fffdfa;
 }
 .btn-secondary:active {
-  transform: translate(4px, 4px);
+  transform: translate(2px, 2px);
   box-shadow: 0 0 0 var(--ink);
 }
 .btn-secondary:focus-visible {
@@ -104,9 +106,10 @@ body {
 }
 
 .btn-hit {
-  font: 800 0.95rem var(--font-ui);
-  padding: 12px 24px;
-  border: 3px solid var(--ink);
+  font: 800 0.875rem var(--font-ui);
+  min-height: 42px;
+  padding: 8px 20px;
+  border: 2px solid var(--ink);
   border-radius: var(--radius-pill);
   background: var(--hit);
   color: var(--ink);
@@ -120,7 +123,7 @@ body {
   user-select: none;
 }
 .btn-hit:active {
-  transform: translate(4px, 4px);
+  transform: translate(2px, 2px);
   box-shadow: 0 0 0 var(--ink);
 }
 
@@ -128,7 +131,7 @@ body {
 .paper-panel {
   background: var(--paper);
   color: var(--ink);
-  border: 3px solid var(--ink);
+  border: 2px solid var(--ink);
   border-radius: var(--radius-panel);
   box-shadow: var(--shadow-hard);
 }
@@ -136,28 +139,32 @@ body {
 .paper-card {
   background: var(--paper);
   color: var(--ink);
-  border: 3px solid var(--ink);
+  border: 2px solid var(--ink);
   border-radius: 16px;
   box-shadow: var(--shadow-hard);
   transition: transform 140ms ease, box-shadow 140ms ease;
 }
 .paper-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--ink);
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-hard-lg);
 }
 
 /* Tabs */
 .tab-pill {
-  border: 3px solid var(--ink);
+  border: 2px solid var(--ink);
   border-radius: var(--radius-pill);
   background: var(--paper);
   color: var(--ink);
-  padding: 8px 16px;
+  padding: 6px 14px;
   font-weight: 800;
   font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
   transition: all 120ms ease;
   user-select: none;
   box-shadow: var(--shadow-hard-sm);

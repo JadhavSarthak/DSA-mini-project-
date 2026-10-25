@@ -86,21 +86,21 @@ export const CorpusTab: React.FC<CorpusTabProps> = ({ onOpenDocument, onCorpusRe
   };
 
   return (
-    <div className="max-w-6xl mx-auto space-y-6 pb-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6 pb-12">
       {/* Header Panel */}
       <div className="paper-panel p-6 flex flex-wrap items-center justify-between gap-4">
         <div>
           <div className="flex items-center space-x-2">
             <Files className="w-7 h-7 text-[var(--red)]" />
             <h2 className="font-display text-3xl sm:text-4xl uppercase text-[var(--ink)]">
-              THE RECEIPTS (CORPUS)
+              CORPUS REPOSITORY
             </h2>
             <span className="score-badge px-3 py-0.5 text-xs">
               {documents.length} Verified Documents
             </span>
           </div>
           <p className="text-xs sm:text-sm font-bold text-[var(--ink)]/80 mt-1">
-            Every document has a stable deterministic ID based on sorted paths. Token-stream fingerprinting prevents duplicate claims.
+            Every document has a stable deterministic ID based on sorted paths. Token-stream fingerprinting prevents duplicate indexing.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export const CorpusTab: React.FC<CorpusTabProps> = ({ onOpenDocument, onCorpusRe
             className="btn-primary !text-xs !py-2.5 !px-5"
           >
             <FilePlus className="w-4 h-4" />
-            <span>{isAddingDoc ? 'Cancel' : 'Add Receipt -&gt;'}</span>
+            <span>{isAddingDoc ? 'Cancel' : 'Add Document -&gt;'}</span>
           </button>
 
           <button
@@ -137,11 +137,11 @@ export const CorpusTab: React.FC<CorpusTabProps> = ({ onOpenDocument, onCorpusRe
       {isAddingDoc && (
         <form onSubmit={handleCreateDocument} className="paper-panel p-6 space-y-4">
           <h3 className="font-display text-2xl uppercase text-[var(--ink)]">
-            Add New Ground-Truth Receipt
+            Index New Document
           </h3>
 
           <div className="space-y-1">
-            <label className="text-xs font-black uppercase text-[var(--ink)]">Receipt Title:</label>
+            <label className="text-xs font-black uppercase text-[var(--ink)]">Document Title:</label>
             <input
               type="text"
               required
@@ -209,7 +209,7 @@ export const CorpusTab: React.FC<CorpusTabProps> = ({ onOpenDocument, onCorpusRe
               className="btn-secondary !text-xs !py-2 !w-full justify-center"
             >
               <BookOpen className="w-3.5 h-3.5 text-[var(--red)]" />
-              <span>Read Receipt -&gt;</span>
+              <span>Read Document -&gt;</span>
             </button>
           </div>
         ))}

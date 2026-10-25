@@ -62,7 +62,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="flex-1 w-full mx-auto py-4 sm:py-6">
         {activeTab === 'search' && (
           <SearchTab
             mode={mode}
@@ -101,11 +101,11 @@ export default function App() {
         onExploreInGraph={handleExploreInGraph}
       />
 
-      {/* Footer per DESIGN.md */}
-      <footer className="border-t-[3px] border-[var(--ink)] bg-[var(--red-deep)] py-4 text-center text-xs font-mono font-bold text-[var(--paper)] shadow-[0_-4px_0_var(--ink)]">
-        <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      {/* Footer */}
+      <footer className="border-t-2 border-[var(--ink)] bg-[var(--red-deep)] py-4 text-center text-xs font-mono font-bold text-[var(--paper)] shadow-[0_-2px_0_var(--ink)]">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-2">
           <span className="uppercase tracking-wider">
-            NEXORA • THE FACT-CHECKING IR ENGINE • BIG CLAIMS. ZERO RECEIPTS.
+            NEXORA • HIGH-PERFORMANCE INFORMATION RETRIEVAL ENGINE • DETERMINISTIC &amp; EXPLAINABLE
           </span>
           <span className="text-[var(--hit)]">
             Trie • Inverted Index • BM25 • Top-K Min-Heap • Graph • FIFO Queue

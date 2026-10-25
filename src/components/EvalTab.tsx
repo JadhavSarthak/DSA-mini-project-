@@ -81,7 +81,7 @@ Tested across ${evalData.queries.length} ground-truth queries in queries.tsv.`;
   };
 
   return (
-    <div className="max-w-6xl mx-auto space-y-6 pb-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6 pb-12">
       {/* Scoreboard Header */}
       <div className="paper-panel p-6 flex flex-wrap items-center justify-between gap-4">
         <div>
@@ -172,7 +172,7 @@ Tested across ${evalData.queries.length} ground-truth queries in queries.tsv.`;
                 <tr className="border-b-[3px] border-[var(--ink)] text-[var(--ink)] text-xs uppercase">
                   <th className="py-2.5">#</th>
                   <th className="py-2.5">Query</th>
-                  <th className="py-2.5">Ground Truth Receipt</th>
+                  <th className="py-2.5">Ground Truth Target</th>
                   <th className="py-2.5">Retrieved Docs</th>
                   <th className="py-2.5 text-right">P@{evalData.k}</th>
                   <th className="py-2.5 text-right">R@{evalData.k}</th>
@@ -239,7 +239,7 @@ Tested across ${evalData.queries.length} ground-truth queries in queries.tsv.`;
             <div className="flex items-center space-x-3">
               <button onClick={handleCopyResult} className="btn-secondary !text-xs !py-2.5 !px-5">
                 {copiedResult ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
-                <span>{copiedResult ? 'Copied Receipt!' : 'Copy result'}</span>
+                <span>{copiedResult ? 'Copied Result!' : 'Copy result'}</span>
               </button>
 
               <button onClick={handleDownloadScoreCard} className="btn-primary !text-xs !py-2.5 !px-5">

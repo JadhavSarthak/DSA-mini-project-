@@ -86,9 +86,9 @@ export const GraphTab: React.FC<GraphTabProps> = ({ onOpenDocument, selectedDocI
   };
 
   return (
-    <div className="space-y-6 pb-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6 pb-12">
       {/* Header Panel */}
-      <div className="paper-panel p-5 max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <div className="paper-panel p-5 flex flex-wrap items-center justify-between gap-4">
         <div>
           <div className="flex items-center space-x-2">
             <Network className="w-6 h-6 text-[var(--red)]" />
@@ -264,7 +264,7 @@ export const GraphTab: React.FC<GraphTabProps> = ({ onOpenDocument, selectedDocI
                     }}
                     className="text-xs font-black uppercase text-[var(--red)] hover:underline flex items-center space-x-1"
                   >
-                    <span>Read receipt -&gt;</span>
+                    <span>Read document -&gt;</span>
                   </button>
                 </div>
                 <h3 className="font-display text-xl text-[var(--ink)] mt-2 leading-tight">

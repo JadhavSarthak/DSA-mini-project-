@@ -22,7 +22,8 @@
 7. [Benchmarks & Evaluation](#benchmarks--evaluation)
 8. [GitHub Setup & Pushing Guide (Troubleshooting)](#github-setup--pushing-guide)
 9. [Architecture Decisions](#architecture-decisions)
-10. [License](#license)
+10. [Comprehensive Technical Documentation (20-Page Manual)](DOCUMENTATION.md)
+11. [License](#license)
 
 ---
 

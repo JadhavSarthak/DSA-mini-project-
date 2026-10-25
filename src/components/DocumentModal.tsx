@@ -53,7 +53,7 @@ export const DocumentModal: React.FC<DocumentModalProps> = ({
             </span>
             <div>
               <h2 className="font-display text-xl sm:text-2xl text-[var(--ink)] leading-tight">
-                {doc?.title || 'Loading receipt...'}
+                {doc?.title || 'Loading document...'}
               </h2>
               <p className="text-xs font-mono font-bold text-[var(--ink)]/80">
                 {doc?.filename} • {doc?.length} tokens
@@ -97,7 +97,7 @@ export const DocumentModal: React.FC<DocumentModalProps> = ({
           <div className="md:col-span-4 p-5 bg-amber-50/70 space-y-4">
             <div className="flex items-center space-x-1.5 text-xs font-black uppercase tracking-wider text-[var(--ink)]">
               <Sparkles className="w-4 h-4 text-[var(--red)]" />
-              <span>Connected Receipts</span>
+              <span>Connected Documents</span>
             </div>
 
             {related.length === 0 ? (
